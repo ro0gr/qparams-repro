@@ -1,5 +1,16 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<h1>RouterService + default QueryParams</h1>
+
+<p>
+  <code>RouterService.transitionTo()</code> doesn't take into account default <code> queryParams </code> values which triggers a model refresh on the parent route.
+</p>
+
+
+<a
+  href="javascript:;"
+  onclick={{action "transitionWithRouterService"}}
+>
+  RouterService.transitionTo('in')
+</a>
+
 
 {{outlet}}
