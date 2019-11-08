@@ -7,10 +7,10 @@ export default Route.extend({
     }
   },
 
-  model(params, {queryParams}) {
+  model(params) {
     alert(`I should only appear on page load!
 
-Query Param Value: ${queryParams.test}
+Query Param Value: ${params.test}
 `)
   }
 });
